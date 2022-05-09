@@ -83,6 +83,7 @@ int main()
 {
     std::map<std::string, std::string> json;
     tree tree_arr[10];
+    const int SIZE = 10;
     int iterator = 0;
     std::ifstream fin;
     fin.open("text.txt");
@@ -131,7 +132,7 @@ int main()
         myfile << '"' << itr->first << '"' << ':' << '"'
           << itr->second << '"' << ',';
     }
-        for ( int i = 0 ; i < 10 ; i++){
+        for ( int i = 0 ; i < SIZE ; i++){
             if(tree_arr[i].key == ""){
                 break;
             }
